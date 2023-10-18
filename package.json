@@ -1,12 +1,13 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "Minecraft-electron-Server-Downloader",
+  "version": "0.0.1",
+  "description": "再也不会大海捞针去寻找服务器核心了",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/MCheping8108/Minecraft-electron-Server-Downloader",
   "keywords": [
     "Electron",
     "quick",
@@ -14,9 +15,22 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "和平peaceful",
+  "license": "GNU-GPLv3",
   "devDependencies": {
     "electron": "^26.3.0"
+  },
+  
+  "build": {
+    "directories": {
+      "output": "build"
+    }, 
+    "appId": "top.peacefuly.MEL",
+    "productName": "MESD",
+    
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true
+    }
   }
 }
