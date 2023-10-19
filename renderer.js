@@ -7,6 +7,10 @@
  */
 document.addEventListener("DOMContentLoaded" , function() {
     const IptSpigot = document.getElementById('IptSpigot');
+    const paper = document.getElementById('paper-btn');
+    paper.addEventListener('click', function() {
+        window.open('https://papermc.io/downloads/paper')
+    })
     document.addEventListener('keydown', function(event) {
         const IptSpigotValue = IptSpigot.value;
         if (event.key === "Enter") {
