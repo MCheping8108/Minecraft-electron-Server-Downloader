@@ -52,4 +52,22 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     outline: none;
 }
+
+/* 当系统为深色模式时，页面背景也会变成深色 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #303030;
+        /* color: white; */
+    }
+
+    .searchInput input {
+        background-color: blueviolet;
+        color: blueviolet;
+    }
+
+    .searchInput button {
+        background-color: blueviolet;
+        /* color: blueviolet; */
+    }
+}
 /* Add styles here to customize the appearance of your app */

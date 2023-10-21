@@ -5,12 +5,17 @@ const path = require('node:path')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 800,
+    showMenuBar: false,
+    resizable: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   })
+
+  // 设置菜单为null，以移除菜单栏
+  mainWindow.setMenu(null);
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
